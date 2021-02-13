@@ -1,13 +1,13 @@
 class Box{
     constructor(x,y){
         var rest = {
-            restitution : 0.5,
+            restitution : 0.2,
             friction : 5
         }
 
-        this.body = Bodies.rectangle(x,y,40,40,rest);
-        this.width = 40;
-        this.height = 40;
+        this.body = Bodies.rectangle(x,y,70,70,rest);
+        this.width = 70;
+        this.height = 70;
         World.add(myWorld,this.body);
     }
 

@@ -15,23 +15,23 @@ function setup(){
     myEngine = Engine.create();
     myWorld = myEngine.world;
     
-    box1 = new Box(1000,580);
-    box2 = new Box(1000,540);
-    box3 = new Box(1000,500);
-    box4 = new Box(1000,460);
-    box5 = new Box(1000,420);
-    box6 = new Box(1000,380);
-    box7 = new Box(1000,340);
-    box8 = new Box(920,580);
-    box9 = new Box(920,540);
-    box10 = new Box(920,500);
-    box11 = new Box(920,460);
-    box12 = new Box(920,420);
-    box13 = new Box(920,380);
-    box14 = new Box(920,340);
+    box1 = new Box(500,555);
+    box2 = new Box(500,485);
+    box3 = new Box(500,415);
+    box4 = new Box(500,345);
+    box5 = new Box(500,275);
+    box6 = new Box(500,205);
+    box7 = new Box(500,135);
+    box8 = new Box(650,555);
+    box9 = new Box(650,485);
+    box10 = new Box(650,415);
+    box11 = new Box(650,345);
+    box12 = new Box(650,275);
+    box13 = new Box(650,205);
+    box14 = new Box(650,135);
     ground = new Ground(600,595);
-    ball = new Ball(500,300,65);
-    sling = new Slingshot(ball.body,{x:200,y:250});
+    ball = new Ball(350,300,65);
+    sling = new Slingshot(ball.body,{x:350,y:250});
 }
 
 function draw(){
@@ -61,6 +61,3 @@ function mouseDragged(){
   Matter.Body.setPosition(ball.body,{x:mouseX,y:mouseY});
 }
 
-function mouseReleased(){
-  sling.fly();
-}

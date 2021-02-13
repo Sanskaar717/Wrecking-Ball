@@ -1,6 +1,12 @@
 class Ball{
+
     constructor(x,y,radius){
-        this.body = Bodies.circle(x,y,radius);
+
+        var rest = {
+            density : 3
+        }
+
+        this.body = Bodies.circle(x,y,radius,rest);
         this.radius = radius;
         World.add(myWorld,this.body);
     }
